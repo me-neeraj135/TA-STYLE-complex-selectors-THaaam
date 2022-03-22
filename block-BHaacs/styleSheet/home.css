@@ -1,0 +1,171 @@
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./flex.css");
+
+/* custom-style */
+
+header {
+  background-color: #59bfc2;
+  padding-top: 1rem;
+}
+
+header small a {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+header ul li a {
+  margin: 0 1rem;
+  color: white;
+  font-weight: 700;
+}
+nav {
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 900;
+}
+h1 ~ button {
+  background-color: white;
+  width: 15%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin-top: 2rem;
+}
+h1 ~ button a {
+  color: rgb(9, 9, 75);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+main:last-child {
+  border: 2px solid black;
+}
+.heroSection {
+  background-color: #59bfc2;
+  height: 35.8rem;
+  /* border: 1px solid red; */
+}
+.headingDiv {
+  /* border: 1px solid black; */
+  /* position: relative; */
+  /* top: 8rem; */
+  /* margin-top: 8rem; */
+}
+.heroDiv {
+  position: relative;
+  top: 2rem;
+  border: 1px solid black;
+  /* width: 70%; */
+  /* height: 45rem; */
+  text-align: center;
+}
+.heroImg {
+  border: 4px solid rgb(11, 224, 47);
+  position: relative;
+  bottom: 8rem;
+}
+
+section ul {
+  border: 1px solid green;
+}
+li {
+  /* margin: 0 2rem; */
+}
+
+.heroDiv {
+  /* margin: 0 auto; */
+}
+
+h2 {
+  text-align: center;
+}
+a[href$=".pdf"] {
+  background-image: url("/block-BHaacs/assets/pdf.png");
+  background-position: center;
+  background-size: contain;
+  width: 3rem;
+  height: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+}
+a[href$=".doc"] {
+  background-image: url("/block-BHaacs/assets/word.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+}
+a[href$=".png"] {
+  background-image: url("/block-BHaacs/assets/image.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+}
+a[href$=".mkv"] {
+  background-image: url(/block-BHaacs/assets/video.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 22%;
+}
+.mhy {
+  text-align: center;
+  border: 1px solid black;
+}
+.bmDiv {
+  border: 2px solid rgb(15, 150, 3);
+}
+.basicDiv {
+  border: 4px solid rgb(161, 4, 4);
+  width: 40%;
+  padding: 1rem;
+}
+.btn48 {
+  width: 100%;
+  border: 1px solid gold;
+}
+.trial {
+  width: 100%;
+  background-color: #59bfc2;
+  text-align: center;
+}
+.tr {
+  width: 30%;
+  border: 1px solid red;
+  margin: 0.5rem;
+}
+.sm {
+  width: 10%;
+
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: rgb(7, 175, 180);
+  border-radius: 50%;
+  color: white;
+}
+.fb {
+  width: 100%;
+  height: 100%;
+}
