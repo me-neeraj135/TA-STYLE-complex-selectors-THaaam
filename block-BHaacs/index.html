@@ -4,7 +4,9 @@
     <!-- Metadata -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=width, initial-scale=version" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Title -->
     <title>Title</title>
     <!-- Stylesheets -->
@@ -28,10 +30,13 @@
     <header>
       <nav class="container flex justify-between">
         <small>
-          <a href="#">TrackL</a>
+          <a class="brand" href="#">TrackL</a>
         </small>
-
-        <ul class="flex justify-between">
+        <label id="menu" for="toggle">
+          <img class="bars" src="./assets/bars-solid.svg" alt="icon-bar" />
+        </label>
+        <input id="toggle" type="checkbox" name="menu" />
+        <ul class="flex justify-between nav-ul">
           <li>
             <a href="#"> Feature </a>
           </li>
@@ -46,7 +51,7 @@
       </nav>
     </header>
     <!-- Main -->
-    <main class="">
+    <main>
       <!-- hero section -->
 
       <section class="heroSection">
@@ -67,48 +72,59 @@
 
       <!-- div with different file -->
 
-      <div class="container">
-        <ul class="flex justify-between">
-          <li>
+      <div class="fileDiv container">
+        <ul class="flex justify-between file-div-ul">
+          <li class="flex align-center">
             <a href="#.pdf"></a>
             <span>PDF FILE</span>
           </li>
-          <li>
+          <li class="flex align-center">
             <a href="#.doc"></a>
             <span>WORD FILE</span>
           </li>
-          <li>
+          <li class="flex align-center">
             <a href="#.png"></a>
             <span>IMAGE FILE</span>
           </li>
-          <li>
+          <li class="flex align-center">
             <a href="#.mkv"></a>
             <span>VIDEO FILE</span>
           </li>
         </ul>
+        <hr />
       </div>
 
       <!-- monitor and graf section -->
-      <section class="flex container">
-        <div>
-          <h2>monitor your learning and improve it</h2>
-          <p>
-            far far away behind the world mountains ,far from the countries
-            vokaliya and consonantia,there live the blind texts.
+      <section
+        class="flex container justify-between gragh-section monitor-section"
+      >
+        <div class="monitorDiv">
+          <h2>
+            monitor your learning <br />
+            and improve it
+          </h2>
+          <p class="far-away-para">
+            far far away behind the world mountains ,far <br />
+            from the countries vokaliya and consonantia,<br />
+            there live the blind texts.
           </p>
-          <button>
-            <a href="#"> learn more </a>
-          </button>
+          <div class="wrapper">
+            <div class="left-angle"></div>
+            <div class="right-angle"></div>
+            <button class="trilangle-btn">
+              <a href="#"> learn more </a>
+            </button>
+          </div>
         </div>
-        <div>
-          <img src="./assets/learning-graph.png" alt="" />
+        <div class="graph-div">
+          <img class="graph-img" src="./assets/learning-graph.png" alt="" />
         </div>
       </section>
 
       <!-- weekly score section -->
 
-      <section class="container">
-        <h2>Weekly score</h2>
+      <section class="container weekly-section">
+        <h2 style="text-align: center">Weekly score</h2>
         <table style="width: 100%">
           <tr>
             <th>days</th>
@@ -162,84 +178,99 @@
       </section>
 
       <!-- join us and let's study with your friends  section -->
-      <section>
+      <section class="join-study-section">
         <div>
-          <h2>Join us and let's study with your friends</h2>
+          <h2 style="text-align: center">
+            Join us and let's study <br />
+            with your friends
+          </h2>
+
+          <div class="month-year-div flex justify-center">
+            <strong style="font-weight: 800">Monthly</strong>
+            <button>
+              <span>|</span>
+            </button>
+            <strong style="font-weight: 800">Yearly</strong>
+          </div>
         </div>
-        <div class="mhy">
-          <strong>Monthly</strong>
-          <button>hello</button>
-          <strong>Yearly</strong>
-        </div>
-        <div class="bmDiv flex justify-around">
-          <div class="basicDiv">
-            <div>
-              <h2>Basic</h2>
-              <p>
+        <div class="month-year-plan flex justify-around container">
+          <div class="basic-div">
+            <div class="heading-para-div">
+              <h2 style="text-align: center">Basic</h2>
+              <p class="basic-div-para">
                 it is a long established fact that a reader will be distracted
                 by a readable
               </p>
-              <span><strong>&dollar;48</strong>/Month</span>
+              <div class="currency-div">
+                <small>&dollar;</small>
+                <span class="number">48</span>
+                <span class="month">/Month</span>
+              </div>
             </div>
             <ul>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">50 courses a day</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">4 forums a month</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">16 chapters a day</span>
               </li>
               <li>
-                <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <img src="./assets/cross.png" alt="tick" />
+                <span class="cross-tick">Private lessons once a week</span>
               </li>
               <li>
-                <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <img src="./assets/cross.png" alt="tick" />
+                <span class="cross-tick">Get weekly reward</span>
               </li>
             </ul>
             <button class="btn48">
-              <a href="#">get started</a>
+              <a class="btn48-txt" href="#">get started</a>
             </button>
           </div>
-          <div class="basicDiv">
-            <div>
-              <h2>Basic</h2>
-              <p>
+
+          <div class="basic-div">
+            <div class="heading-para-div">
+              <h2 style="text-align: center">Most Popular</h2>
+              <p class="basic-div-para">
                 it is a long established fact that a reader will be distracted
                 by a readable
               </p>
-              <span><strong>&dollar;48</strong>/Month</span>
+              <div class="currency-div">
+                <small>&dollar;</small>
+                <span class="number">58</span>
+                <span class="month">/Month</span>
+              </div>
             </div>
             <ul>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">50 courses a day</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">4 forums a month</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">16 chapters a day</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">Private lessons once a week</span>
               </li>
               <li>
                 <img src="./assets/tick.png" alt="tick" />
-                <span>50 courses a day</span>
+                <span class="correct-tick">Get weekly reward</span>
               </li>
             </ul>
-            <button class="btn48">
-              <a href="#">get started</a>
+            <button class="btn58">
+              <a class="btn58-txt" href="#">get started</a>
             </button>
           </div>
         </div>
@@ -248,7 +279,7 @@
 
       <section>
         <div class="container trial">
-          <h2>start your 30 days trial now!</h2>
+          <h2 style="color: white">start your 30 days trial now!</h2>
           <button>
             <a href="#">get started</a>
           </button>
@@ -257,41 +288,49 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div class="container flex">
-        <div class="tr">
+      <div class="container flex justify-between">
+        <div class="trackl">
           <h3>TrackL</h3>
           <p>far far away ,behind the word mountains , for from the.</p>
-          <ul class="flex">
-            <li class="sm">
+          <ul class="flex social-media-ul">
+            <li class="facebook">
               <img
-                class="fb"
-                src="./assets/facebook-brands.svg"
+                class="smedia"
+                src="./assets/facebook-f-brands.svg"
                 alt="facebook"
               />
             </li>
-            <li class="sm">
-              <img src="./assets/facebook-brands.svg" alt="facebook" />
+            <li class="twitter">
+              <img
+                class="smedia"
+                src="./assets/twitter-brands.svg"
+                alt="facebook"
+              />
             </li>
-            <li class="sm">
-              <img src="./assets/facebook-brands.svg" alt="facebook" />
+            <li class="insta smedia">
+              <img
+                class="smedia"
+                src="./assets/instagram-brands.svg"
+                alt="facebook"
+              />
             </li>
           </ul>
         </div>
-        <div class="tr">
+        <div class="feature">
           <h3>features</h3>
           <a href="#">calendar</a><br />
           <a href="#">forum</a><br />
           <a href="#">messenger</a><br />
           <a href="#">schedule</a>
         </div>
-        <div class="tr">
+        <div class="support">
           <h3>support</h3>
           <a href="#">about us</a> <br />
           <a href="#">career</a><br />
           <a href="#">FAQs</a><br />
           <a href="#">security</a>
         </div>
-        <address class="tr">
+        <address class="contact">
           <h3>contact</h3>
           <a href="mailto:hello@trackl.io">hello@trackl.io</a><br />
           <a href="tel:432500406">(+00)00 000</a>
