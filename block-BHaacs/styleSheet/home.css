@@ -1,0 +1,856 @@
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./flex.css");
+/* custom-style */
+
+header {
+  background-color: #59bfc2;
+  padding-top: 1rem;
+}
+
+header small a {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+header ul li a {
+  margin: 0 1rem;
+  color: white;
+  font-weight: 700;
+}
+#toggle {
+  display: none;
+}
+nav {
+  /* border: 1px solid black; */
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 900;
+}
+h1 ~ button {
+  background-color: white;
+  width: 15%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin-top: 2rem;
+}
+h1 ~ button a {
+  color: rgb(9, 9, 75);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.heroSection {
+  background-color: #59bfc2;
+  height: 38.5rem;
+  /* border: 1px solid red; */
+}
+
+.heroDiv {
+  position: relative;
+  top: 2rem;
+  /* border: 1px solid black; */
+  /* width: 70%; */
+  /* height: 45rem; */
+  text-align: center;
+}
+.heroImg {
+  /* border: 4px solid rgb(11, 224, 47); */
+  position: relative;
+  bottom: 8rem;
+}
+
+.fileDiv {
+  /* border: 3px solid black; */
+  margin-top: 20.8%;
+}
+div hr {
+  margin-top: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-indent: initial;
+  text-anchor: start;
+  color: #304682;
+}
+a + span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(156, 155, 155);
+  padding: 1rem 0;
+}
+a[href$=".pdf"] {
+  background-image: url("/assets/pdf.png");
+  background-position: center;
+  background-size: contain;
+  width: 3rem;
+  height: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+a[href$=".doc"] {
+  background-image: url("/assets/word.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+a[href$=".png"] {
+  background-image: url("/assets/image.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+a[href$=".mkv"] {
+  background-image: url("/assets/video.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+
+/* monitor and graph section */
+
+.monitorDiv {
+  /* border: 1px solid black; */
+  width: 47%;
+}
+.far-away-para {
+  font-weight: 600;
+  color: rgb(145, 143, 143);
+  margin-bottom: 0.9rem;
+}
+.gragh-section {
+  margin: 2rem;
+}
+
+.wrapper {
+  width: 13%;
+  height: 2.5rem;
+  background: #59bfc2;
+  position: absolute;
+  font-size: 0;
+}
+.left-angle {
+  width: 0px;
+  height: 0px;
+
+  border-left: 1.23rem solid white;
+  border-right: 1.23rem solid transparent;
+  border-top: 1.23rem solid transparent;
+  border-bottom: 1.23rem solid transparent;
+}
+.right-angle:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+
+  border-left: 1.23rem solid #59bfc2;
+  border-right: 1.23rem solid white;
+  border-top: 1.23rem solid white;
+  border-bottom: 1.23rem solid white;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}
+.triangle-btn {
+  position: relative;
+  top: -40px;
+  left: 50%;
+}
+.trilangle-btn {
+  width: 50%;
+  padding: 0.7rem;
+  background-color: #59bfc2;
+  position: absolute;
+  top: 0rem;
+  left: 3rem;
+  border: none;
+}
+button > a {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 800;
+}
+table {
+  margin: 3rem 0;
+}
+tr:first-child {
+  text-transform: capitalize;
+  text-align: left;
+  background-color: #59bfc2;
+  color: white;
+  font-weight: 800;
+}
+tr:nth-child(2n + 3) {
+  background-color: #b6d3d4;
+}
+table,
+th {
+  padding: 0.4rem 0;
+  padding-left: 01rem;
+}
+table,
+td {
+  border: 2px solid rgb(192, 189, 189);
+  width: 22%;
+  padding: 0.4rem 0;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+
+/* month year button section */
+
+.month-year-div {
+  text-align: center;
+}
+
+strong + button {
+  /* position: absolute; */
+  display: inline-block;
+  width: 4.5rem;
+  border-radius: 0.8rem;
+  padding: 0.21rem 0;
+  background-color: #baeef0;
+  border: none;
+  margin: 0 1rem;
+}
+button > span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #59bfc2;
+  border: none;
+  position: relative;
+  left: 1rem;
+  color: white;
+  font-weight: 800;
+}
+.month-year-plan {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: 3rem auto;
+}
+.month-year-plan ul li {
+  margin: 1rem 0;
+}
+.month-year-plan ul li img {
+  width: 1rem;
+  height: 1rem;
+}
+.basic-div {
+  border: 4px solid rgb(175, 174, 174);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 40%;
+}
+span > strong {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.heading-para-div {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 3rem;
+}
+.basic-div-para {
+  color: #b0bbd3;
+  font-weight: 600;
+}
+.currency-div small {
+  color: #59bfc2;
+  font-weight: 800;
+}
+.number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #59bfc2;
+}
+.month {
+  color: gray;
+  font-weight: 800;
+}
+.btn48 {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin: 1rem auto;
+  border: 3px solid gray;
+}
+.btn58 {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #59bfc2;
+  margin: 1rem 0;
+  border: none;
+}
+.btn48-txt {
+  text-transform: capitalize;
+  color: gray;
+}
+.btn58-txt {
+  text-transform: capitalize;
+  color: white;
+}
+.correct-tick {
+  color: #57668d;
+  font-weight: 700;
+}
+.cross-tick {
+  color: #7185b1;
+  font-weight: 600;
+}
+.trial {
+  border: 1px solid gray;
+  text-align: center;
+  background-color: #59bfc2;
+  border-radius: 2rem;
+  padding: 5rem 0;
+}
+.trial button {
+  margin: 3rem 0 0 0;
+  padding: 1rem 0;
+  width: 20%;
+  border-radius: 0.5rem;
+  background: white;
+  border: none;
+}
+.trial button a {
+  color: #304682;
+  text-transform: capitalize;
+}
+
+/* footer */
+footer {
+  margin: 3rem 0;
+}
+footer > div {
+  /* border: 1px solid black; */
+}
+
+h3 {
+  color: #304682;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.trackl {
+  width: 20%;
+}
+.trackl p {
+  color: #7689b3;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.twitter {
+  margin: 0 2rem;
+}
+.social-media-ul li {
+  /* border: 1px solid black; */
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #59bfc2;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.social-media-ul li img {
+  /* width: 100%; */
+  height: 100%;
+  color: white;
+}
+
+.feature a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #a0adcb;
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+.support a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #a0adcb;
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+.contact a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #a0adcb;
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+
+/*  media queries */
+
+@media (max-width: 768px) {
+  #menu {
+    width: 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    z-index: 99;
+    right: -60%;
+    position: absolute;
+    right: 0;
+    top: 1%;
+  }
+  #toggle:checked ~ .nav-ul li {
+    display: none;
+  }
+  header {
+    /* margin-left: 3rem; */
+    /* border: 1px solid black; */
+  }
+  header ul {
+    margin-right: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  .heroSection {
+    /* border: 1px solid black; */
+    height: 25.5rem;
+  }
+  .heroDiv {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 80%;
+  }
+  h1 ~ button {
+    width: 25%;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+  }
+
+  h1 ~ button a {
+    font-size: 90%;
+  }
+  .heroImg {
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    width: 80%;
+  }
+
+  /* file-div */
+
+  .fileDiv {
+    /* border: 1px solid black; */
+  }
+
+  .file-div-ul li span {
+    font-size: 1rem;
+  }
+
+  /* monitor-section */
+
+  .monitor-section {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+  }
+  .monitorDiv {
+    /* border: 1px solid black; */
+    width: 45%;
+  }
+  .monitorDiv h2 {
+    font-size: 1rem;
+  }
+  .monitorDiv p {
+    font-size: 0.9rem;
+  }
+  .wrapper {
+    /* position: relative; */
+  }
+  .left-angle {
+  }
+  .right-angle {
+    position: absolute;
+    /* left: 80%; */
+    right: -40%;
+    top: 0;
+    bottom: 0;
+  }
+  .trilangle-btn {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 5rem;
+    height: 1.5rem;
+  }
+  .trilangle-btn a {
+    font-size: 0.6rem;
+  }
+  .graph-div {
+    width: 45%;
+  }
+  .graph-img {
+    width: 100%;
+  }
+
+  /* weekly schedule */
+
+  .weekly-section {
+    /* border: 1px solid black; */
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .weekly-section tr th {
+    font-size: 1rem;
+  }
+  .weekly-section tr td {
+    font-size: 0.8rem;
+  }
+
+  /* join us and let's study with your friends  section */
+
+  .join-study-section {
+    /* border: 1px solid black; */
+  }
+  .month-year-plan {
+    /* border: 1px solid black; */
+    /* height: 30rem; */
+  }
+  .basic-div {
+    height: 40%;
+  }
+  .basic-div ul {
+    height: 30%;
+  }
+  .basic-div ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .basic-div ul li span {
+    font-size: 0.5rem;
+  }
+  .basic-div ul li img {
+    width: 0.6rem;
+    height: 0.5rem;
+  }
+  .heading-para-div {
+    /* border: 1px solid black; */
+  }
+  .heading-para-div h2 {
+    font-size: 1rem;
+  }
+  .heading-para-div p {
+    font-size: 0.7rem;
+  }
+  .currency-div .number {
+    font-size: 1.5rem;
+  }
+
+  /* trial-section */
+
+  .trial {
+    padding: 2rem 0;
+  }
+
+  /* footer */
+  h3 {
+    font-size: 1.1rem;
+  }
+  footer > div {
+    /* border: 1px solid black; */
+  }
+  .trackl p {
+    font-size: 0.7rem;
+  }
+  .social-media-ul li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  .feature a {
+    font-size: 0.7rem;
+  }
+  .support {
+    font-size: 0.7rem;
+  }
+  .contact {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #menu {
+    width: 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    z-index: 99;
+    right: -60%;
+    position: absolute;
+    right: 0;
+    top: 1%;
+  }
+  #toggle:checked ~ .nav {
+    display: none;
+    /* background-color: indigo; */
+    /* position: absolute; */
+    /* top: 0; */
+  }
+
+  header {
+    /* margin-left: 3rem; */
+    /* border: 1px solid black; */
+  }
+  .brand {
+    font-size: 1rem;
+  }
+
+  header ul {
+    position: absolute;
+    top: 7%;
+    left: 20%;
+  }
+  .nav-ul li a {
+    font-size: 0.6rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .heroSection {
+    /* border: 1px solid black; */
+    height: 14.7rem;
+  }
+  .heroDiv {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 80%;
+  }
+  h1 ~ button {
+    width: 30%;
+    position: absolute;
+    top: 55%;
+    left: 34%;
+  }
+
+  h1 ~ button a {
+    font-size: 60%;
+  }
+  .heroImg {
+    position: absolute;
+    top: 180%;
+    left: 10%;
+    width: 80%;
+    /* border: 1px solid black; */
+  }
+
+  /* file-div */
+
+  .fileDiv {
+    /* border: 1px solid black; */
+  }
+  .file-div-ul li a {
+    width: 1.2rem;
+    height: 0.9rem;
+  }
+
+  .file-div-ul li span {
+    font-size: 0.5rem;
+  }
+
+  /* monitor-section */
+
+  .monitor-section {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+  }
+  .monitorDiv {
+    /* border: 1px solid black; */
+    width: 45%;
+    height: 10rem;
+    margin: 0 auto;
+  }
+
+  .monitorDiv h2 {
+    font-size: 0.7rem;
+  }
+  .monitorDiv p {
+    font-size: 0.6rem;
+  }
+
+  .graph-div {
+    width: 45%;
+    min-height: 10rem;
+    /* border: 1px solid black; */
+  }
+  .graph-img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper {
+    /* position: relative; */
+  }
+  .left-angle {
+    /* background-color: black; */
+  }
+  .right-angle {
+    position: absolute;
+    left: 265%;
+    top: 0;
+    bottom: 0;
+    background-color: #59bfc2;
+    z-index: 99;
+  }
+  .trilangle-btn {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 5rem;
+    height: 2.5rem;
+  }
+  .trilangle-btn a {
+    font-size: 0.6rem;
+  }
+  .graph-div {
+    width: 45%;
+  }
+  .graph-img {
+    width: 100%;
+  }
+
+  /* weekly schedule */
+
+  .weekly-section {
+    margin-top: 2rem;
+    /* border: 1px solid black; */
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .weekly-section table {
+    width: 80%;
+  }
+  .weekly-section tr th {
+    font-size: 0.7rem;
+  }
+  .weekly-section tr td {
+    font-size: 0.6rem;
+  }
+
+  /* join us and let's study with your friends  section */
+
+  .join-study-section {
+    /* border: 1px solid black; */
+    /* border: 1px solid red; */
+  }
+  .month-year-plan {
+    display: flex;
+    flex-direction: column;
+  }
+  .basic-div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .basic-div ul {
+    /* height: 15%; */
+  }
+  .basic-div ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .basic-div ul li span {
+    font-size: 0.5rem;
+  }
+  .basic-div ul li img {
+    width: 0.6rem;
+    height: 0.5rem;
+  }
+  .heading-para-div {
+    /* border: 1px solid black; */
+  }
+  .heading-para-div h2 {
+    font-size: 1rem;
+  }
+  .heading-para-div p {
+    font-size: 0.7rem;
+  }
+  .currency-div .number {
+    font-size: 1.5rem;
+  }
+
+  /* trial-section */
+
+  .trial {
+    height: 4rem;
+    position: relative;
+    padding: 0.5;
+  }
+  .trial button {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+  }
+
+  /* footer */
+  h3 {
+    font-size: 0.8rem;
+  }
+  footer > div {
+    /* border: 1px solid black; */
+  }
+  .trackl p {
+    font-size: 0.7rem;
+  }
+  .social-media-ul {
+    position: relative;
+    left: 100%;
+  }
+  .social-media-ul li {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+
+    /* padding: 1rem; */
+  }
+  .social-media-ul li img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  .feature a {
+    font-size: 0.7rem;
+  }
+  .support a {
+    font-size: 0.7rem;
+  }
+  .contact a {
+    font-size: 0.7rem;
+  }
+}
